@@ -1,0 +1,74 @@
+@import url("https://fonts.cdnfonts.com/css/saiyan-sans");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #1a1a1a, #3a3a3a);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.title img {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: drop-shadow(0 0 10px rgba(255, 230, 0, 0.7));
+}
+
+.title img:hover {
+  transform: scale(1.2);
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.character {
+  background: linear-gradient(145deg, #e76a24, #efefef);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+}
+
+.character img {
+  width: 160px;
+  height: 320px;
+  /* object-fit: contain; */
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.character img:hover {
+  transform: scale(1.4);
+}
+
+.character-info {
+  background-color: rgba(231, 106, 36, 0.9);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+}
+
+.character-info div {
+  margin: 0.25rem 0;
+  font-size: 1.25rem;
+}
+
+.character-info div:first-child {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #ffd700;
+}
